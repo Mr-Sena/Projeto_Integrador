@@ -4,7 +4,9 @@ import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delet
 import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
 import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
 import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
+import { HomensComponent } from './homens/homens.component';
 import { MenuComponent } from './menu/menu.component';
+import { OngsComponent } from './ongs/ongs.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { PostagemComponent } from './postagem/postagem.component';
 import { TemaComponent } from './tema/tema.component';
@@ -21,7 +23,10 @@ const routes: Routes = [
   {path: 'postagem-edit/:id', component: PostagemEditComponent},
   {path: 'postagem-delete/:id', component: PostagemDeleteComponent},
 
-  {path: 'perfil/:id', component: PerfilComponent}
+  {path: 'perfil/:id', component: PerfilComponent},
+
+  {path: 'men', component: HomensComponent},
+  {path: 'ongs', component: OngsComponent}
 
 ];
 

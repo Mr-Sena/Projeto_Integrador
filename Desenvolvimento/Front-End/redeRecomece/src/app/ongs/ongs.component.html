@@ -1,7 +1,9 @@
 <!--Inicio NavBar-->
 <div class="fundo ">
     <nav class="inicio ">
-        <img src="https://i.imgur.com/nc384TD.png" alt="Logo Recomece" width="95px" height="95px" class="img-fluid " href="menu.component.html">
+        <a [routerLink]=" ['/menu'] ">
+            <img src="https://i.imgur.com/nc384TD.png" alt="Logo Recomece" width="95px" height="95px" class="img-fluid " href="menu.component.html">
+        </a>
     </nav>
     <!--Fim NavBar-->
 
@@ -262,3 +264,33 @@
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+
+
+
+<!--button info - inicio-->
+<div id="container-floating">
+
+    <div class="nd4 nds" data-toggle="tooltip" data-placement="left" data-original-title="contract@gmail.com">
+        <img class="reminder">
+        <a [routerLink]=" ['/ongs'] ">
+            <img class="reminder" src="https://i.imgur.com/Lz9AGUj.png" alt="mulher">
+        </a>
+    </div>
+    <div class="nd3 nds" data-toggle="tooltip" data-placement="left" data-original-title="Reminder">
+        <a [routerLink]=" ['/men'] ">
+            <img class="reminder" src="https://i.imgur.com/BE4nCHX.png" />
+        </a>
+    </div>
+    <div class="nd1 nds" data-toggle="tooltip" data-placement="left" data-original-title="Edoardo@live.it"><img class="reminder">
+        <a [routerLink]=" ['/menu'] ">
+            <img class="reminder" src="https://i.imgur.com/cCngrNV.png" />
+        </a>
+    </div>
+    <div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create" onclick="newmail()">
+        <p class="plus">+</p>
+        <img class="edit" src="http://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/1x/bt_compose2_1x.png">
+    </div>
+</div>
+<!--button info - fim-->
