@@ -76,7 +76,9 @@ import { PostagemDeleteComponent } from &#x27;./delete/postagem-delete/postagem-
 import { TemaDeleteComponent } from &#x27;./delete/tema-delete/tema-delete.component&#x27;;
 import { PostagemEditComponent } from &#x27;./edit/postagem-edit/postagem-edit.component&#x27;;
 import { TemaEditComponent } from &#x27;./edit/tema-edit/tema-edit.component&#x27;;
+import { HomensComponent } from &#x27;./homens/homens.component&#x27;;
 import { MenuComponent } from &#x27;./menu/menu.component&#x27;;
+import { OngsComponent } from &#x27;./ongs/ongs.component&#x27;;
 import { PerfilComponent } from &#x27;./perfil/perfil.component&#x27;;
 import { PostagemComponent } from &#x27;./postagem/postagem.component&#x27;;
 import { TemaComponent } from &#x27;./tema/tema.component&#x27;;
@@ -93,7 +95,10 @@ const routes: Routes &#x3D; [
   {path: &#x27;postagem-edit/:id&#x27;, component: PostagemEditComponent},
   {path: &#x27;postagem-delete/:id&#x27;, component: PostagemDeleteComponent},
 
-  {path: &#x27;perfil/:id&#x27;, component: PerfilComponent}
+  {path: &#x27;perfil/:id&#x27;, component: PerfilComponent},
+
+  {path: &#x27;men&#x27;, component: HomensComponent},
+  {path: &#x27;ongs&#x27;, component: OngsComponent}
 
 ];
 

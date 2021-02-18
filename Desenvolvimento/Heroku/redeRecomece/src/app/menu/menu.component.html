@@ -1,13 +1,22 @@
-<nav class="navbar navbar-expand-lg main-navbar ">
+<!--Nav bar-->
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: rosybrown;">
     <a href="#scroll">
-        <img src="https://i.imgur.com/nc384TD.png" alt="Logo Recomece" width="95px" height="95px" class="img-fluid mx-6"></a>
+        <img src="https://i.imgur.com/nc384TD.png" alt="Logo Recomece" width="95px" height="95px" class="img-fluid mx-6">
+    </a>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon">
+          <img src="https://i.imgur.com/YZJdBhe.png" alt="">
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
         </ul>
-        <form class="form-inline text-aling: right ">
+        <form class="form-inline my-2 my-lg-0 d-flex justify-co text-aling: right">
+
             <div class="form-group  mx-2">
 
                 <label for="username" class="sr-only ">Usuário</label>
@@ -25,9 +34,11 @@
             </a>
 
         </form>
-    </div>
 
+    </div>
 </nav>
+
+
 <!--Fim NavBar-->
 
 <!--Carrosel-inicio-->
@@ -79,6 +90,31 @@
         <p class="lead text-dark text2"> Para você mulher que decidiu reescrever as linhas do seu destino, faça parte da nossa comunidade feminina.</p>
         <br><br>
         <img class="mt-5" src="https://i.imgur.com/GQzzLEd.png" alt="Mulheres com bandeira Recomece" width="800px" height="90px" class="img-fluid  float-sm-right">
+        <!--button info - inicio-->
+        <div id="container-floating">
+
+            <div class="nd4 nds" data-toggle="tooltip" data-placement="left" data-original-title="contract@gmail.com">
+                <img class="reminder">
+                <a [routerLink]=" ['/ongs'] ">
+                    <img class="reminder" src="https://i.imgur.com/Lz9AGUj.png" alt="mulher">
+                </a>
+            </div>
+            <div class="nd3 nds" data-toggle="tooltip" data-placement="left" data-original-title="Reminder">
+                <a [routerLink]=" ['/men'] ">
+                    <img class="reminder" src="https://i.imgur.com/BE4nCHX.png" />
+                </a>
+            </div>
+            <div class="nd1 nds" data-toggle="tooltip" data-placement="left" data-original-title="Edoardo@live.it"><img class="reminder">
+                <a [routerLink]=" ['/menu'] ">
+                    <img class="reminder" src="https://i.imgur.com/cCngrNV.png" />
+                </a>
+            </div>
+            <div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create" onclick="newmail()">
+                <p class="plus">+</p>
+                <img class="edit" src="http://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/1x/bt_compose2_1x.png">
+            </div>
+        </div>
+        <!--button info - fim-->
     </div>
 
     <!--Fim Intro-->
@@ -197,10 +233,10 @@
 
     <!--Cadastrar-Fim-->
 
-    <!--cards-equipe-inicio<hr>ng ser
-<br>
-<br> 
-    <!-image lateral-inicio-->
+    <!--cards-equipe-inicio-->
+    <br>
+    <br>
+    <!--image lateral-inicio-->
     <div class="d-flex justify-content-center font-italic display-4 mb-4 p-3 align-items-center">
 
 
@@ -298,7 +334,7 @@
                 <img class="card-img-top" src="https://i.imgur.com/C0ylYyT.jpg" alt="Foto da Jenifer">
             </div>
             <div class="card-body">
-                <h5 class="card-title">Jenifer</h5>
+                <h5 class="card-title">Jenifer Plácido</h5>
                 <p class="card-text">Desenvolvedora Jr. java Full stack</p>
                 <a href="https://github.com/jeniferplacido" target="_blank" class="p-2">
                     <img class="tm-social" src="https://i.imgur.com/BvLKWvt.png" alt="Logo do Git">
@@ -311,6 +347,9 @@
 
         </div>
     </div>
+
+
     <!--cards-fim-->
-    <br>
-    <br>
+
+    <br><br>
+</div>
