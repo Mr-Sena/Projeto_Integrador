@@ -8974,3 +8974,18 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-23 12:27:50.809
 !MESSAGE executing callback sts4.classpath.cXPXfnXE SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-23 17:43:34.161
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.cXPXfnXE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-23 17:43:34.179
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.cXPXfnXE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-23 17:43:34.193
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-23 17:43:34.207
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.cXPXfnXE => OK
+
+!ENTRY org.eclipse.ui 2 2 2021-02-23 17:43:35.914
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
