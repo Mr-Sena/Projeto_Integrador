@@ -21,6 +21,7 @@ import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delet
 import { OngsComponent } from './ongs/ongs.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { HomensComponent } from './homens/homens.component';
+import { PostsComponent } from './posts/posts.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { HomensComponent } from './homens/homens.component';
     OngsComponent,
     PerfilComponent,
     HomensComponent,
+    PostsComponent,
   ],
   imports: [
     BrowserModule,

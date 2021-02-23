@@ -24,6 +24,7 @@ export class PostagemComponent implements OnInit {
 
   user: User = new User()
   idUser = environment.id
+  listaUsuario: User[]
 
   nome = environment.nome
   foto = environment. foto

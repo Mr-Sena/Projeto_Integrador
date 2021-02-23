@@ -35,13 +35,11 @@ export class MenuComponent implements OnInit {
       /*Variável definida com o escopo global na pasta Environment(blogPersonal/src/environments/environment.prod)
       ↓ Para acessa-la segura a tecla Ctrl + click na palavra environment*/
       environment.token = this.userLogin.token
-      console.log(this.userLogin.token)
       environment.nome = this.userLogin.nome
       environment.foto = this.userLogin.foto
       environment.id = this.userLogin.id
       environment.tipo = this.userLogin.tipo
       environment.email = this.userLogin.email
-      console.log('Email: ', this.userLogin.email)
       environment.bio = this.userLogin.bio
 
       this.router.navigate(['/postagem'])

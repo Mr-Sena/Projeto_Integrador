@@ -1,14 +1,15 @@
 .glassmorphism {
-    background: #93b5c657;
-    box-shadow: 0 8px 32px 0 rgb(36, 43, 141);
+    background: #e7b3bb63;
+    box-shadow: 0 8px 32px 0 rosybrown;
     backdrop-filter: blur( 7.0px);
     -webkit-backdrop-filter: blur( 7.0px);
     border-radius: 10px;
+    border: 4px solid #f00
 }
 
 .glassmorphismo {
     background: #93b5c6ad;
-    box-shadow: 0 8px 32px 0 rgba(36, 43, 141, 0.281);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.281);
     backdrop-filter: blur( 7.0px);
     -webkit-backdrop-filter: blur( 7.0px);
     border-radius: 10px;
@@ -296,3 +297,96 @@ h3 {
     margin: auto;
     right: 20px;
 }
+
+
+/* Button's style*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #2D3436;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    position: relative;
+    display: block;
+    color: black;
+    font-size: 14px;
+    font-family: "montserrat";
+    text-decoration: none;
+    margin: 10px 0;
+    border: 2px solid black;
+    padding: 4px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+
+.btn::before {
+    background: #FF7675;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+
+.btn1::before {
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.btn1:hover::before {
+    height: 380%;
+}
+
+.btn2::before {
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.btn2:hover::before {
+    height: 380%;
+}
+
+.btn-space {
+    margin: 12px;
+}
+
+
+/* Botões de nova postagem */
+
+a.animated-button.victoria-three {
+    border: 2px solid #D24D57;
+}
+
+a.animated-button.victoria-three:after {
+    background: #D24D57;
+    opacity: .5;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+a.animated-button.victoria-three:hover:after {
+    height: 140%;
+    opacity: 1;
+}
+
+
+/* Botões de nova postagem */
+
+
+/* \Button's style*/

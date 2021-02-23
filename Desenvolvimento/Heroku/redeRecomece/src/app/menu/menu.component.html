@@ -2,14 +2,15 @@
 
 
 
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: rosybrown;">
+<nav class="navbar navbar-expand-lg main-navbar">
     <a href="#scroll">
         <img src="https://i.imgur.com/nc384TD.png" alt="Logo Recomece" width="95px" height="95px" class="img-fluid mx-6">
     </a>
 
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
       <span class="navbar-toggler-icon">
-          <img src="https://i.imgur.com/YZJdBhe.png" alt="">
+          <img src="https://i.imgur.com/YZJdBhe.png" style="height: 30px; width: 30px;" alt="">
       </span>
     </button>
     <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
@@ -20,17 +21,17 @@
             <div class="form-group  mx-2">
 
                 <label for="username" class="sr-only ">Usuário</label>
-                <input [(ngModel)]='userLogin.userName' type="text" class="form-control  mx-2" name="username" id="username" placeholder="Campo do usuário">
+                <input [(ngModel)]='userLogin.userName' type="text" class="form-control  mx-2" name="username" id="username" placeholder="Usuário">
 
                 <label for="password" class="sr-only">Senha</label>
-                <input [(ngModel)]='userLogin.senha' type="password" class="form-control  mx-2 " name="password" id="password" placeholder="Campo da senha">
+                <input [(ngModel)]='userLogin.senha' type="password" class="form-control  mx-2 " name="password" id="password" placeholder="Senha">
             </div>
 
             <div>
                 <button type="submit" class="btn btn-outline-secondary bt-color bt2-color mx-2  bt-zoom" (click)='entrar()'>Entrar</button>
             </div>
             <a href="#areacadastrar">
-                <button class="btn btn-outline-secondary bt-color mx-3 bt2-color bt-cadastrar bt-zoom" type="button">Cadastre-se!</button>
+                <button class="btn btn-outline-secondary bt-color mx-3 bt2-color bt-cadastrar bt-zoom" type="button">Cadastre-se</button>
             </a>
 
         </form>
@@ -50,21 +51,21 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-block w-100 altura-carrosel" src="https://i.imgur.com/z4rxyg2.jpg" alt="Primeiro Slide">
+            <img class="d-block w-100" src="https://i.imgur.com/mgiPXcz.png" alt="Primeiro Slide">
             <div class="carousel-caption d-none d-md-block image-1">
                 <h5>Seja a protagonista forte que você quer ver no mundo!</h5>
                 <p>Quando a vida bater forte e sua alma sangrar, quando esse mundo pesado lhe ferir, lhe esmagar... É hora do recomeço. Recomece a LUTAR. </p>
             </div>
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100 altura-carrosel" src="https://i.imgur.com/n8Aor24.png" alt="Segundo Slide">
+            <img class="d-block w-100" src="https://i.imgur.com/fnUeG8s.png" alt="Segundo Slide">
             <div class="carousel-caption d-none d-md-block image-2">
                 <h5>Encontre força no seu interior e coloque para fora toda a garra e determinação que você possui!</h5>
                 <p>Quando tudo for escuro e nada iluminar, quando tudo for incerto e você só duvidar... É hora do recomeço. Recomece a ACREDITAR. </p>
             </div>
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100 altura-carrosel" src="https://i.imgur.com/395LUyu.jpg" alt="Terceiro Slide">
+            <img class="d-block w-100" src="https://i.imgur.com/5Yoeron.png" alt="Terceiro Slide">
             <div class="carousel-caption d-none d-md-block image-3">
                 <h5>Seja uma mulher que levanta outras mulheres!</h5>
                 <p>Quando a estrada for longa e seu corpo fraquejar, quando não houver caminho nem um lugar pra chegar...É hora do recomeço. Recomece a CAMINHAR. </p>
@@ -90,31 +91,7 @@
         <p class="lead text-dark text2"> Para você mulher que decidiu reescrever as linhas do seu destino, faça parte da nossa comunidade feminina.</p>
         <br><br>
         <img class="mt-5" src="https://i.imgur.com/GQzzLEd.png" alt="Mulheres com bandeira Recomece" width="800px" height="90px" class="img-fluid  float-sm-right">
-        <!--button info - inicio-->
-        <div id="container-floating">
 
-            <div class="nd4 nds" data-toggle="tooltip" data-placement="left" data-original-title="contract@gmail.com">
-                <img class="reminder">
-                <a [routerLink]=" ['/ongs'] ">
-                    <img class="reminder" src="https://i.imgur.com/Lz9AGUj.png" alt="mulher">
-                </a>
-            </div>
-            <div class="nd3 nds" data-toggle="tooltip" data-placement="left" data-original-title="Reminder">
-                <a [routerLink]=" ['/men'] ">
-                    <img class="reminder" src="https://i.imgur.com/BE4nCHX.png" />
-                </a>
-            </div>
-            <div class="nd1 nds" data-toggle="tooltip" data-placement="left" data-original-title="Edoardo@live.it"><img class="reminder">
-                <a [routerLink]=" ['/menu'] ">
-                    <img class="reminder" src="https://i.imgur.com/cCngrNV.png" />
-                </a>
-            </div>
-            <div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create" onclick="newmail()">
-                <p class="plus">+</p>
-                <img class="edit" src="http://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/1x/bt_compose2_1x.png">
-            </div>
-        </div>
-        <!--button info - fim-->
     </div>
 
     <!--Fim Intro-->
@@ -147,8 +124,8 @@
 
                     <p class="font-weight-light text-justify altera-fontes col-md-12 fonte">
                         Desenvolvemos essa rede, dando um suporte, para que haja um melhor engajamento e <span style='font-weight:bold'>diversidade</span> dentro do mercado, revelando oportunidades, eventos ou qualquer atividade que prepare as habilidades
-                        do usuário para ingressar no mercado. O Recomece nasceu em um momento em que surgiu um termo inerente às mulheres: feminicídios.
-                        <br>Dada as estatísticas, não poderiamos excluir esse tema mais delicado nos nossos assuntos, para que você se sinta confortável e plena na tomada das suas decisões.
+                        do usuário para ingressar no mercado. O Recomece nasceu em um momento em que surgiu um termo inerente às mulheres: feminicídios. Dada as estatísticas, não poderiamos excluir esse tema mais delicado nos nossos assuntos, para que
+                        você se sinta confortável e plena na tomada das suas decisões.
                     </p>
 
 
@@ -169,13 +146,15 @@
     <div class="container-fluid" id="areacadastrar">
         <div class="row">
 
-            <div class="col-md-6" id='img-bg'></div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <img class="mb-3" src="https://i.imgur.com/Wulqi5y.png" id='img-bg' alt="">
+            </div>
 
             <div class="col-md-6 mt-5 mb-5">
 
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-10">
-                        <h1 class="text-center">Junte-se a nós</h1>
+                        <h1 class="text-center">Junte-se a nós!</h1>
 
                         <div class="form-group">
                             <label for="nome">Nome</label>
@@ -253,7 +232,7 @@
             </div>
             <div class="card-body ">
                 <h5 class="card-title">Vitória Gonçalves</h5>
-                <p class="card-text">Desenvolvedora Jr. java Full stack</p>
+                <p class="card-text">Desenvolvedora Web Java Jr. Full Stack</p>
                 <a href="https://github.com/VitoriaAlric" target="_blank" class="p-2">
                     <img class="tm-social" src="https://i.imgur.com/BvLKWvt.png" alt="Logo do Git">
                 </a>
@@ -270,7 +249,7 @@
             </div>
             <div class="card-body">
                 <h5 class="card-title">Jéssica Santos</h5>
-                <p class="card-text">Desenvolvedora Jr. java Full stack</p>
+                <p class="card-text">Desenvolvedora Web Java Jr. Full Stack</p>
                 <a href="https://github.com/JessicaSantoss" target="_blank" class="p-2">
                     <img class="tm-social" src="https://i.imgur.com/BvLKWvt.png" alt="Logo do Git">
                 </a>
@@ -286,7 +265,7 @@
             </div>
             <div class="card-body">
                 <h5 class="card-title">João Pedro</h5>
-                <p class="card-text">Desenvolvedor Jr. java Full stack</p>
+                <p class="card-text">Desenvolvedor Web Java Jr. Full Stack</p>
                 <a href="https://github.com/Mr-Sena" target="_blank" class="p-2">
                     <img class="tm-social" src="https://i.imgur.com/BvLKWvt.png" alt="Logo do Git">
                 </a>
@@ -303,7 +282,7 @@
             </div>
             <div class="card-body">
                 <h5 class="card-title">Thiago dos Anjos</h5>
-                <p class="card-text">Desenvolvedor Jr. java Full stack</p>
+                <p class="card-text">Desenvolvedor Web Java Jr. Full Stack</p>
                 <a href="https://github.com/thiagohdosanjos" target="_blank" class="p-2">
                     <img class="tm-social" src="https://i.imgur.com/BvLKWvt.png" alt="Logo do Git">
                 </a>
@@ -319,8 +298,8 @@
             </div>
             <div class="card-body">
                 <h5 class="card-title">Ana Verônica</h5>
-                <p class="card-text">Desenvolvedora Jr. java Full stack.</p>
-                <a href="" target="_blank" class="p-2">
+                <p class="card-text">Desenvolvedora Web Java Jr. Full Stack</p>
+                <a href="https://github.com/Anaveronica3001" target="_blank" class="p-2">
                     <img class="tm-social" src="https://i.imgur.com/BvLKWvt.png" alt="Logo do Git">
                 </a>
                 <a href="https://www.linkedin.com/in/ana-veronica-nascimento-cruz-1896a0158/" target="_blank" class="p-2">
@@ -335,7 +314,7 @@
             </div>
             <div class="card-body">
                 <h5 class="card-title">Jenifer Plácido</h5>
-                <p class="card-text">Desenvolvedora Jr. java Full stack</p>
+                <p class="card-text">Desenvolvedora Web Java Jr. Full Stack</p>
                 <a href="https://github.com/jeniferplacido" target="_blank" class="p-2">
                     <img class="tm-social" src="https://i.imgur.com/BvLKWvt.png" alt="Logo do Git">
                 </a>
@@ -351,5 +330,36 @@
 
     <!--cards-fim-->
 
+
+
     <br><br>
+
+    <app-rodape></app-rodape>
 </div>
+
+
+<!--button info - inicio-->
+<div id="container-floating">
+
+    <div class="nd4 nds" data-toggle="tooltip" data-placement="left" data-original-title="contract@gmail.com">
+        <img class="reminder">
+        <a [routerLink]=" ['/ongs'] ">
+            <img class="reminder" src="https://i.imgur.com/Lz9AGUj.png" alt="mulher">
+        </a>
+    </div>
+    <div class="nd3 nds" data-toggle="tooltip" data-placement="left" data-original-title="Reminder">
+        <a [routerLink]=" ['/men'] ">
+            <img class="reminder" src="https://i.imgur.com/BE4nCHX.png" />
+        </a>
+    </div>
+    <div class="nd1 nds" data-toggle="tooltip" data-placement="left" data-original-title="Edoardo@live.it"><img class="reminder">
+        <a [routerLink]=" ['/menu'] ">
+            <img class="reminder" src="https://i.imgur.com/cCngrNV.png" />
+        </a>
+    </div>
+    <div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create" onclick="newmail()">
+        <p class="plus">+</p>
+        <img class="edit" src="http://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/1x/bt_compose2_1x.png">
+    </div>
+</div>
+<!--button info - fim-->

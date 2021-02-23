@@ -3,7 +3,7 @@ import { Tema } from './../model/Tema';
 import { TemaService } from './../service/tema.service';
 import { PostagemService } from './../service/postagem.service';
 import { Postagem } from './../model/Postagem';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { environment } from './../../environments/environment.prod';
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../service/auth.service';
@@ -15,6 +15,8 @@ import { UserLogin } from '../model/UserLogin';
   styleUrls: ['./perfil.component.css']
 })
 export class PerfilComponent implements OnInit {
+
+  idUsuario: number
 
   userLogin: UserLogin = new UserLogin()
 
@@ -40,6 +42,7 @@ export class PerfilComponent implements OnInit {
 
   constructor(
     private router: Router,
+    private route: ActivatedRoute,
     private postagemService: PostagemService,
     private temaService: TemaService,
     public authService: AuthService
@@ -55,8 +58,10 @@ export class PerfilComponent implements OnInit {
     }
 
     this.getAllTemas()
-    this.getAllPostagens()   
+    this.getAllPostagens()
     
+    this.idUsuario = this.route.snapshot.params['id']
+    this.findByIdUser(this.idUsuario)
   }
 
   getAllTemas(){
@@ -77,10 +82,10 @@ export class PerfilComponent implements OnInit {
     })
   }
 
-  findByIdUser(){
-    this.postagemService.getByIdUser(this.idUser).subscribe((resp: User) => {
+  findByIdUser(id: number){
+    this.postagemService.getByIdUser(id).subscribe((resp: User) => {
       this.user = resp
-      //console.log(this.user);
+      console.log(this.user);
       
     })
   }

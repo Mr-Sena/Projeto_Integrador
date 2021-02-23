@@ -7,5 +7,4 @@ export const environment = {
   foto:'',
   bio:'',
   email:''
-  
 };
